@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div style="background-image: url(image.jpg);" class="container">
+        <div  class="calculator">
+            <form>
+                <div>
+                    <input type="text" class="display" name="display" id="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearScreen()">
+                    <input type="button" value="DE" onclick="deleteFunc()">
+                    <input type="button" value="." onclick="inputElement('.')">
+                    <input type="button" value="&div;" onclick="inputElement('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="inputElement('7')">
+                    <input type="button" value="8" onclick="inputElement('8')">
+                    <input type="button" value="9" onclick="inputElement('9')">
+                    <input type="button" value="&times;" onclick="inputElement('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="inputElement('4')">
+                    <input type="button" value="5" onclick="inputElement('5')">
+                    <input type="button" value="6" onclick="inputElement('6')">
+                    <input type="button" value="+" onclick="inputElement('+')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="inputElement('1')">
+                    <input type="button" value="2" onclick="inputElement('2')">
+                    <input type="button" value="3" onclick="inputElement('2')">
+                    <input type="button" value="-" onclick="inputElement('-')">
+                </div>
+                <div>
+                    <input type="button" value="000" onclick="inputElement('000')">
+                    <input type="button" value="00" onclick="inputElement('00')">
+                    <input type="button" value="0" onclick="inputElement('0')">
+                    <input type="button" value="=" onclick="equalFunc()" onkeypress="enterKey()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
