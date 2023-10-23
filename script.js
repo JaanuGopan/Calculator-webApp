@@ -29,3 +29,5 @@ function enterKey()
         equalFunc();
     }
 }
+
+// new commont
